@@ -1,0 +1,21 @@
+.header {
+
+    &__title {
+        height: 10vh;
+        line-height: 10vh;
+        text-align: center;
+        font-family: $title-font-family;
+        font-size: 3em;
+        a {
+            color: black;
+            
+        }
+
+        @media (max-width: $breakpoint-small) {
+            height: 20vh;
+        }
+    }
+
+    
+}
+
