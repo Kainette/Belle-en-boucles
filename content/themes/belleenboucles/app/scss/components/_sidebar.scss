@@ -1,11 +1,31 @@
 .sidebar__nav {
+    display: flex;
+    justify-content: center;
     z-index: -1;
-    background-color: blue;
+    background-color: transparentize(black, 0.8,);
+    opacity: 0.8;
     top: -100vh;
     height: 100vh;    
     width: 100vw;
     position: fixed;
     transition: 1s;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 50vh;
+        line-height: 3em;
+
+        &__link {
+            font-family: $title-font-family;
+            color: white;
+            font-size: 1.5em;
+            position: relative;
+        }
+    
+    }
 
     @media (min-width: $breakpoint-large-2) {
         left: -100%;
@@ -21,4 +41,5 @@
     //     transition: 1s;
     // }
 }
+
 
