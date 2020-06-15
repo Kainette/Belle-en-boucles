@@ -5,8 +5,9 @@
     height: 100vh;    
     width: 100vw;
     position: fixed;
+    transition: 1s;
 
-    @media (max-width: $breakpoint-medium) {
+    @media (min-width: $breakpoint-large-2) {
         left: -100%;
         width: 100%;
     }
@@ -16,30 +17,8 @@
         transition: 1s;
     }
         
-    &.close {
-        transition: 1s;
-    }
+    // &.close {
+    //     transition: 1s;
+    // }
 }
 
-// .menu {
-//     background-color: $Red;
-//     left: -300px;
-//     width: 300px;
-//     height: 100vh;
-//     position: fixed;
-//     top: 0;
-
-//     @media (max-width: $breakpoint-medium) {
-//         left: -100%;
-//         width: 100%;
-//     }
-
-//     &.open {
-//         left: 0px;
-//         transition: .5s;
-//     }
-
-//     &.close {
-//         transition: .5s;
-//     }
-// }
