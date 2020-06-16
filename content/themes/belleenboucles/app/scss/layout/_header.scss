@@ -1,7 +1,14 @@
 .header{
+    
     position: fixed;
     width: 100vw;
-
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 20vh;
+    transition: transform 0.4s;
+   
     &__title {
         background-color: #fff;
     }
@@ -40,9 +47,20 @@
         }
     }
 
-    
-   
+} 
+
+@media (max-width: $breakpoint-large-2) {
+    .scroll-down {
+        transform: translate3d(0, -100%, 0);
+    }
+       
+    .scroll-up {
+        transform: none;
+    }
+
+
 }
+
 
 .fa-bars {
     width: 100%;
