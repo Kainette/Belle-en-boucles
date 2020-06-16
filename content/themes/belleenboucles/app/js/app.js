@@ -47,7 +47,7 @@ var app = {
     // }
     // lastScrollValue = scrollTop;
 
-      const header = document.querySelector('header');
+      const header = document.querySelector('.header');
       const scrollUp = "scroll-up";
       const scrollDown = "scroll-down";
       let lastScroll = 0;
