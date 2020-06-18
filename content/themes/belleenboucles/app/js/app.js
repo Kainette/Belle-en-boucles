@@ -2,9 +2,35 @@ var app = {
   init: function () {
     app.initEventListener();
     app.HandleStickyHeader();
+    app.showSlides();
+    
     console.log('init');
+
+    
   },
 
+    
+  showSlides: function()  {
+
+    if (!this.slideIndex) {
+			this.slideIndex = 0;
+		}
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		for (i = 0; i < slides.length; i++) {
+			console.log(slides[i]);
+			slides[i].style.display = "none";
+		}
+
+		this.slideIndex++;
+		slides[this.slideIndex - 1].style.display = "block";
+		if (this.slideIndex > (slides.length - 1)) { this.slideIndex = 0 }
+
+		setTimeout( () => { this.showSlides()} , 5000);
+	
+      
+  }, 
+      
   initEventListener: function () {
 
     let burgerMenuOpenAndCloseButton = document.querySelector('#i');
@@ -12,6 +38,7 @@ var app = {
     //window.addEventListener('scroll' , app.HandleStickyHeader);
     
   },
+  
 
   handleOpenAndCloseMenu: function () {
     console.log('click');
@@ -31,48 +58,37 @@ var app = {
   },
 
   HandleStickyHeader: function () {
-    
 
-    // let header = document.querySelector('.header');
-    // let lastScrollValue = 0;
-    // let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    // console.log(scrollTop)
-    
-    // if (scrollTop > lastScrollValue) {
-    //   header.classList.add('hidden');
-    // }else if (window.scrollTop) {
-    //   header.classList.remove('hidden');
-    // } else {
-    //   header.classList.remove('hidden');
-    // }
-    // lastScrollValue = scrollTop;
+    const header = document.querySelector('.header');
+    const scrollUp = "scroll-up";
+    const scrollDown = "scroll-down";
+    let lastScroll = 0;
 
-      const header = document.querySelector('.header');
-      const scrollUp = "scroll-up";
-      const scrollDown = "scroll-down";
-      let lastScroll = 0;
-      
-      window.addEventListener("scroll", () => {
-        const currentScroll = window.pageYOffset;
-        if (currentScroll == 0) {
-          header.classList.remove(scrollUp);
-          return;
-        }
-        
-        if (currentScroll > lastScroll && !header.classList.contains(scrollDown)) {
-          // down
-          header.classList.remove(scrollUp);
-          header.classList.add(scrollDown);
-        } else if (currentScroll < lastScroll && header.classList.contains(scrollDown)) {
-          // up
-          header.classList.remove(scrollDown);
-          header.classList.add(scrollUp);
-        }
-        lastScroll = currentScroll;
-      });
-  }
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll == 0) {
+        header.classList.remove(scrollUp);
+        return;
+      }
+
+      if (currentScroll > lastScroll && !header.classList.contains(scrollDown)) {
+        // down
+        header.classList.remove(scrollUp);
+        header.classList.add(scrollDown);
+      } else if (currentScroll < lastScroll && header.classList.contains(scrollDown)) {
+        // up
+        header.classList.remove(scrollDown);
+        header.classList.add(scrollUp);
+      }
+
+
+      lastScroll = currentScroll;
+    });
+
+
+  },
 
 }
- 
+
 document.addEventListener("DOMContentLoaded", app.init);
 
