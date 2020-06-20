@@ -1,0 +1,56 @@
+.main-registration{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.registration{
+
+display: flex;
+justify-content:center;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+justify-content: center;
+padding: 7em 0;
+h4{
+    font-family: $title-font-family;
+    font-size: 2em;
+}
+p { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    align-self: center;
+}
+input {
+   
+    font-weight: bold;
+    background-color: white;
+    padding: 0.7rem;
+    margin: 1rem;
+    border-radius: 30px;
+    border: 2px solid $pink;  
+    outline: none;
+    width: 60%;
+
+    
+}  
+&__button{
+    font-size: 1.3em;
+    margin: 1rem;
+    border-radius: 30px;
+    border: 1px transparent;
+    box-shadow: 0px 2px 2px black;
+    background-color: $pink;
+    width: 30%; 
+    padding: 0.5em;
+    @media (max-width: $breakpoint-extra-large) {
+        width: 50%;
+     }
+    a{
+        color: black; 
+    } 
+}
+}

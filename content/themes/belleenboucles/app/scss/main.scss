@@ -23,6 +23,14 @@ $fa-font-path: '~font-awesome/fonts';
     'layout/header',
     'layout/footer',
     'layout/main';
-    
+
+    @import 
+
+    'components/presentation/presentation',
+    'components/shop/shop',
+    'components/shop/card',
+    'components/login/login',
+    'components/registration/registration';
+
     
     

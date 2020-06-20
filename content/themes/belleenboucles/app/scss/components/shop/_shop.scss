@@ -1,0 +1,17 @@
+.main{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.articles{
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    @media (max-width: $breakpoint-extra-large) {
+        flex-direction: column;
+        
+        
+        
+    }
+}
