@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.8.0",
+    "autoprefixer": "^9.8.2",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.2.2",
     "chokidar": "^2.1.8",
@@ -25,10 +25,11 @@
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.3.1",
     "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^3.0.6",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.43.0",
     "webpack-build-notifier": "^1.2.2",
-    "webpack-cli": "^3.3.11",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
@@ -36,6 +37,7 @@
     "file-loader": "^6.0.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
-    "reset-css": "^5.0.1"
+    "reset-css": "^5.0.1",
+    "uglify-js": "^3.10.0"
   }
 }

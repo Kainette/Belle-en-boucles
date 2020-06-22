@@ -100,6 +100,7 @@ let config = {
           }
         }
       },
+     
     ]
   },
   // Configuration du serveur de développement qui rechargera automatiquement les contenus lors d'un changement
