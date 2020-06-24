@@ -13,27 +13,33 @@
   <header >
     <div class="header">
       <h1 class="header__title"><a href="#">L'Atelier Belle en Boucles</a></h1>
-      <nav class="header__nav">
-        <div class="header__nav__item">
+      
+
+      <?php get_template_part('template-parts/nav/nav-header'); ?>
+      <!-- <nav class="header__nav">
+      
+         <div class="header__nav__item">
           <a class="header__nav__item__link" href="#">Accueil</a>
           <a class="header__nav__item__link" href="presentation.html">Présentation</a>
           <a class="header__nav__item__link" href="shop.html">La boutique</a>
           <a class="header__nav__item__link" href="login.html">Se connecter</a>
           <a class="header__nav__item__link" href="registration.html">S'inscrire</a>
-        </div>
-        <i class="fa fa-bars" id="i" aria-hidden="true"></i>
-      </nav>
+        </div> 
+      </nav> -->
+      <i class="fa fa-bars" id="i" aria-hidden="true"></i>
      
     <!--sidebar menu responsive-->
-        <nav class="sidebar__nav">
-          <div class="sidebar__nav__item">
+        <!-- <nav class="sidebar__nav">
+      
+           
             <a class="sidebar__nav__item__link" href="index.html">Accueil</a>
             <a class="sidebar__nav__item__link" href="presentation.html">Présentation</a>
             <a class="sidebar__nav__item__link" href="shop.html">La boutique</a>
             <a class="sidebar__nav__item__link" href="login.html">Se connecter</a>
             <a class="sidebar__nav__item__link" href="registration.html">S'inscrire</a>
-          </div>
-        </nav>
+            
+          </nav> -->
+          <?php get_template_part('template-parts/nav/nav-burger'); ?>
     </div>  
 
   </header>
