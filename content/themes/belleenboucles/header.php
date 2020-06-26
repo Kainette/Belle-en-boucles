@@ -4,7 +4,7 @@
 <head>
 <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Belles en boucles</title>
+  <title><?php bloginfo('title'); ?></title>
   <link rel="stylesheet" href="css/style.css" />
   <?php wp_head(); ?>
 </head>
@@ -12,7 +12,7 @@
 <body>
   <header >
     <div class="header">
-      <h1 class="header__title"><a href="#">L'Atelier Belle en Boucles</a></h1>
+      <h1 class="header__title"><a href="<?= home_url(); ?>"><?php bloginfo('title'); ?></a></h1>
       
 
       <?php get_template_part('template-parts/nav/nav-header'); ?>

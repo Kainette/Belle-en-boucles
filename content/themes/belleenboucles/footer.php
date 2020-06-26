@@ -10,9 +10,11 @@
         </div>
         <div class="link-nav">
 
-          <a class="" href="#">Contact</a>
+        <?php get_template_part('template-parts/nav/nav-footer'); ?>
+
+          <!-- <a class="" href="#">Contact</a>
           <a class="" href="#">Mentions légales</a>
-          <a class="" href="#">Conditions générales </a>
+          <a class="" href="#">Conditions générales </a> -->
 
         </div>
 
