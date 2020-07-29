@@ -1,0 +1,32 @@
+/*
+Theme Name: Storefront Enfant par WP Marmite
+Description: Theme enfant du theme Storefront. Vous pouvez desormais le personnaliser sans risquer de perdre vos modifications
+Author: WPMarmite
+Author URI: https://wpmarmite.com
+Template: storefront
+Version: 1.0
+*/
+
+/* Search bar none  */
+.woocommerce-active .site-header .site-search { display: none; }
+/* entry title of qui suis je in  none  */
+.entry-title{
+    display: none;
+}
+
+.site-branding{
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    margin-left: auto;
+}
+.primary-navigation{
+    font-family: 'Dancing Script', cursive;
+    justify-content: center;
+   display:flex;
+   font-size: 1.4em;
+}
+.col-full{
+    display:flex;
+    justify-content: space-between;
+}
